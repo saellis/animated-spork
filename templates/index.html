@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Timber</title>
-    </head>
-    <body>
-        <h1>Welcome to Timber!</h1>
-        <h2>We hope you find a match!</h2>
-        <form class="" action="/result" method="post">
-            <label for="userplant">What color is your space?:</label>
-            <input type="text" name="space_color">
-            <input type="submit"/>
-        </form>
-    </body>
+<head>
+    <title>Timber</title>
+</head>
+<body>
+    <h1>Welcome to Timber!</h1>
+    
+    <h3>We hope you find your match ;)</h3>
+
+    <br>
+
+    <form class="" action="/result" method="post">
+      <h2> Tell us about your room! </h2>
+
+      <h3>How's the lighting in your room?</h3>
+
+      <input type="radio" name="lighting" value="bright" checked> My room gets lots of sunlight.<br>
+      <input type="radio" name="lighting" value="dim"> My room has limited or dim sunlight.<br>
+      <input type="radio" name="lighting" value="dark"> I live in a windowless dungeon, please send help :( <br>
+
+      <h3>How much space do you have in your home FOR PLANTS?</h3>
+
+      <input type="radio" name="space" value="lots" checked> Lots of space! Gimme ALL THE PLANTS. <br>
+      <input type="radio" name="space" value="some"> Some space... No trees please. <br>
+      <input type="radio" name="space" value="little"> Very little space, but I want to fill it with PLANTS. <br>
+
+      <h3>How would you describe your lifestyle?</h3>
+
+      <input type="radio" name="lifestyle" value="free" checked> I've got a lot of free time. <br>
+      <input type="radio" name="lifestyle" value="busy"> I travel a lot, often for weeks at a time. <br>
+      <input type="radio" name="lifestyle" value="busy"> I work long hours. <br>
+      <input type="radio" name="lifestyle" value="busy"> I'm either at work or out with friends. <br>
+
+      <h3>What's your level of plantsperience (plant experience)? </h3>
+
+      <input type="radio" name="experience" value="none" checked> I've never owned or seen a plant. <br>
+      <input type="radio" name="experience" value="some"> I had a plant once but it's super dead now. RIP planty :'( <br>
+      <input type="radio" name="experience" value="lots"> I've got me some plants, but I want MORE. <br>
+      <input type="radio" name="experience" value="somuch"> I know all the plants, I'm just testing you to see what plants YOU know. <br>
+
+      <br>
+
+    <label for="space_color">And what is your space color?:</label>
+    <input type="text" name="space_color">
+
+      <input type="submit" />
+    </form>
+
+</body>
 </html>
