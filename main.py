@@ -46,7 +46,7 @@ class ResultPage(webapp2.RequestHandler):
 
         plant_url = "https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_snake-plant-slaurentii_terracotta_4_800x.jpg?v=1537308389"
 
-        self.response.write(results_template.render(my_plant=plant_colors_string, image_link=plant_url)) #the response
+        self.response.write(results_template.render(my_plant=plant_colors_string, plant_url=plant_url)) #the response
 
 # the app configuration section
 app = webapp2.WSGIApplication([
